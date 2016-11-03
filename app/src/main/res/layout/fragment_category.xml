@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/actbgcolor"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/tab_header" />
+
+    <RelativeLayout
+        android:id="@+id/layoutTj"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hello_layout_style"
+        android:gravity="center_vertical"
+        android:paddingBottom="5.0dip"
+        android:paddingLeft="2.0dip"
+        android:paddingTop="5.0dip" >
+
+        <TextView
+            android:id="@+id/tvTj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:textColor="#ff666666"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_bookmark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTj"
+        android:cacheColorHint="#fff8f8f8"
+        android:divider="@drawable/img_list_separator_line"
+        android:listSelector="@drawable/list_item_selector" />
+
+</LinearLayout>

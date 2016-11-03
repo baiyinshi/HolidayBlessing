@@ -1,0 +1,20 @@
+<resources>
+
+    <color name="top_bar_search_select_bg_color">#662d3037</color>
+    <color name="top_bar_title_shadow_color">#2e000000</color>
+    <color name="normal_color_title">#fffefefe</color>
+    <color name="actbgcolor">#fff8f8f8</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="float_transparent">#66000000</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+
+</resources>

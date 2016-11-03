@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/details_listiem_bg"
+    android:paddingBottom="6.0dip"
+    android:paddingTop="3.0dip" >
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:src="@drawable/img_list_open_item" />
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:text="标题"
+        android:textColor="#ff333333"
+        android:textSize="18.0sp" />
+
+    <TextView
+        android:id="@+id/ItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemTitle"
+        android:layout_marginLeft="3.0dip"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:text="Time"
+        android:textColor="#ff999999"
+        android:textSize="12.0sp" />
+
+</RelativeLayout>

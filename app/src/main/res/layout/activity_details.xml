@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deatils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/tab_header" />
+
+    <LinearLayout
+        android:id="@+id/layoutSong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hello_layout_style"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layoutSong0"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/song_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSong0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textColor="#ff333333"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSong1"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/song_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSong1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送朋友"
+                android:textColor="#ff333333"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSong2"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/song_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSong2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送爱人"
+                android:textColor="#ff333333"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSong3"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/song_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSong3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSong3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送长辈"
+                android:textColor="#ff333333"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSong4"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/song_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSong4"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSong4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送晚辈"
+                android:textColor="#ff333333"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSong5"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/song_btn_bg"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onSong5"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvSong5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送情侣"
+                android:textColor="#ff333333"
+                android:textSize="20.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#fff8f8f8"
+        android:divider="@drawable/img_list_separator_line"
+        android:listSelector="@drawable/list_item_selector" />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/topbar" >
+
+        <ImageView
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginTop="11.0dip"
+            android:background="@drawable/navigation_bar_right_selector"
+            android:minWidth="30.0dip"
+            android:scaleType="center"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/input_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.6999817dip"
+            android:layout_marginTop="13.0dip"
+            android:layout_toRightOf="@+id/back_layout" >
+
+            <EditText
+                android:id="@+id/input_img"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="53.0dip"
+                android:hint="@string/channel_search_title_hint"
+                android:imeOptions="actionSearch"
+                android:maxLength="30"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="35.0dip"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/cancel_layout"
+                android:layout_width="45.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="53.0dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/input_cancel"
+                    android:layout_width="17.0dip"
+                    android:layout_height="17.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="52.69998dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.6999817dip"
+            android:layout_marginTop="11.0dip"
+            android:background="@drawable/tab_item_search_selector"
+            android:gravity="center"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

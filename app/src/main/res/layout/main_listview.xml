@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:minHeight="50.0dip"
+    android:paddingBottom="4.0dip" >
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/img_list_left" />
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:text="TextView01"
+        android:textColor="#ff333333"
+        android:textSize="22.0sp" />
+
+    <TextView
+        android:id="@+id/ItemRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ItemTitle"
+        android:layout_alignBottom="@+id/ItemTitle"
+        android:layout_toRightOf="@+id/ItemTitle"
+        android:textColor="#ff999999"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/ItemClasss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2.0dip"
+        android:layout_toLeftOf="@+id/ItemIds"
+        android:singleLine="true"
+        android:text="ItemClasss"
+            android:gravity="center_horizontal"
+        android:textColor="#ff999999"
+        android:textSize="17.0sp" />
+
+    <TextView
+        android:id="@+id/ItemIds"
+        android:layout_width="60.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8.0dip"
+        android:layout_toLeftOf="@+id/ItemImage_right"
+        android:gravity="right"
+        android:singleLine="true"
+        android:text="ItemIds"
+        android:textColor="#ff999999"
+        android:textSize="17.0sp" />
+
+    <ImageView
+        android:id="@+id/ItemImage_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10.0dip"
+        android:src="@drawable/img_list_open_item" />
+
+</RelativeLayout>
